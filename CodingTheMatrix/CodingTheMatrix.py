@@ -182,41 +182,41 @@ representation_dict = {u:(u//base**2,(u%base**2)//base,u%base) for u in range(ba
 id2salary = {0:1000.0, 1:1200.50, 2:990}
 names = ['Larry', 'Curly', 'Moe']
 # Replace { ... } with a one-line dictionary comprehension that uses id2salary and names.
-listdict2dict = { ... }
+listdict2dict = {x:y for x,y in zip(names, id2salary.values())}
 
 
 
-### 26: (Task 0.5.28) Procedure nextInts
-## Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
-#def nextInts(L): return [ ... ]
+## 26: (Task 0.5.28) Procedure nextInts
+# Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
+def nextInts(L): return [ x+1 for x in L ]
 
 
 
-### 27: (Task 0.5.29) Procedure cubes
-## Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
-#def cubes(L): return [ ... ] 
+## 27: (Task 0.5.29) Procedure cubes
+# Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
+def cubes(L): return [ x*x*x for x in L ] 
 
 
 
-### 28: (Task 0.5.30) Procedure dict2list
-## Input: a dictionary dct and a list keylist consisting of the keys of dct
-## Output: the list L such that L[i] is the value associated in dct with keylist[i]
-## Example: dict2list({'a':'A', 'b':'B', 'c':'C'},['b','c','a']) should equal ['B','C','A']
-## Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
-#def dict2list(dct, keylist): return [ ... ]
+## 28: (Task 0.5.30) Procedure dict2list
+# Input: a dictionary dct and a list keylist consisting of the keys of dct
+# Output: the list L such that L[i] is the value associated in dct with keylist[i]
+# Example: dict2list({'a':'A', 'b':'B', 'c':'C'},['b','c','a']) should equal ['B','C','A']
+# Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
+def dict2list(dct, keylist): return [ dct[x] for x in keylist ]
 
 
 
-### 29: (Task 0.5.31) Procedure list2dict
-## Input: a list L and a list keylist of the same length
-## Output: the dictionary that maps keylist[i] to L[i] for i=0,1,...len(L)-1
-## Example: list2dict(['A','B','C'],['a','b','c']) should equal {'a':'A', 'b':'B', 'c':'C'}
-## Complete the procedure definition by replacing { ... } with a one-line dictionary comprehension
-#def list2dict(L, keylist): return { ... }
+## 29: (Task 0.5.31) Procedure list2dict
+# Input: a list L and a list keylist of the same length
+# Output: the dictionary that maps keylist[i] to L[i] for i=0,1,...len(L)-1
+# Example: list2dict(['A','B','C'],['a','b','c']) should equal {'a':'A', 'b':'B', 'c':'C'}
+# Complete the procedure definition by replacing { ... } with a one-line dictionary comprehension
+def list2dict(L, keylist): return { x:y for x,y in zip(keylist, L) }
 
 
 
-### 30: (Task 0.5.32) Generating all three-digit numbers over a given base
-## Complete the procedure definition by replacing { ... } with a one-line set comprehension
-#def all_3_digit_numbers(base, digits): return { ... }
+## 30: (Task 0.5.32) Generating all three-digit numbers over a given base
+# Complete the procedure definition by replacing { ... } with a one-line set comprehension
+def all_3_digit_numbers(base, digits): return {x for x in range(base**3)}
 
