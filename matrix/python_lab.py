@@ -6,7 +6,7 @@
 
 
 ## 1: (Task 0.5.1) Minutes in a Week
-minutes_in_week = 60*24*6
+minutes_in_week = 60*24*7
 
 
 ## 2: (Task 0.5.2) Remainder
@@ -69,7 +69,7 @@ list_of_numbers = [20, 10, 15, 75]
 # Replace ... with a one-line expression that evaluates to the average of list_of_numbers.
 # Your expression should refer to the variable list_of_numbers, and should work
 # for a list of any length greater than zero.
-list_average = sum([20,10,15,75])/4
+list_average = sum(list_of_numbers)/len(list_of_numbers)
 
 
 
