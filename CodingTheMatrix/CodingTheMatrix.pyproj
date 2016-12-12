@@ -25,6 +25,9 @@
     <Compile Include="..\matrix\python_lab.py">
       <Link>python_lab.py</Link>
     </Compile>
+    <Compile Include="01_TheField.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
